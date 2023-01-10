@@ -71,9 +71,26 @@
                                 
                 <!-- section other taxi services start-->
                     <section id="section_other_taxi_services">
-                        <div class="container-fluid">
+                        <div class="container-fluid p-0">
 
-                            <div class="row">
+                            <div class="row">                            
+
+                                <div class="col-md-3 col-sm-6 mt-2">
+                                    <div class="card">
+                                        <img src="images/leh.webp" class="card-img-top" alt="Manali to Leh taxi">
+                                        <div class="card-body">
+                                            <h2 class="card-title">chandigarh to manali taxi fare</h2>
+                                            <ul>
+                                                <li>&#8377;4-5K (Sedan)</li>
+                                                <li>&#8377;7-8K (Innova)</li>
+                                                <li>&#8377;10-11K (Mini Bus)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="p-3">
+                                            <?php echo '<a href="tel:'.$phone_number.'" class="btn btn-success btn-sm">Click To Call</a>'; ?> 
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="col-md-3 col-sm-6 mt-2">
                                     <div class="card rounded-3">
@@ -106,23 +123,6 @@
                                                 <li>All Taxes Available</li>
                                             </ul>
                                             <p class="card-text">Chandigarh to manali cab is Availabe at best rates.</p>
-                                        </div>
-                                        <div class="p-3">
-                                            <?php echo '<a href="tel:'.$phone_number.'" class="btn btn-success btn-sm">Click To Call</a>'; ?> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 col-sm-6 mt-2">
-                                    <div class="card">
-                                        <img src="images/leh.webp" class="card-img-top" alt="Manali to Leh taxi">
-                                        <div class="card-body">
-                                            <h2 class="card-title">chandigarh to manali taxi fare</h2>
-                                            <ul>
-                                                <li>&#8377;4-5K (Sedan)</li>
-                                                <li>&#8377;7-8K (Innova)</li>
-                                                <li>&#8377;10-11K (Mini Bus)</li>
-                                            </ul>
                                         </div>
                                         <div class="p-3">
                                             <?php echo '<a href="tel:'.$phone_number.'" class="btn btn-success btn-sm">Click To Call</a>'; ?> 
@@ -197,7 +197,7 @@
 
                 <div class="col-md-3 col-sm-6 mt-2">
                     <div class="card">
-                        <img src="/images/manali-taxi-services/manali_full_tour.webp" class="card-img-top" alt="Manali to Delhi taxi">
+                        <img src="images/manali-taxi-services/manali_full_tour.webp" class="card-img-top" alt="Manali to Delhi taxi">
                         <div class="card-body">
                             <h2 class="card-title"><a href="./manali-taxi-services.php">Manali taxi Services</a></h2>
                             <ul>

@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <!-- custom css  -->
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/our-team.css">
     <link rel="stylesheet" href="css/authority.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index-media-query.css">
 
     <!-- google fonts  -->
@@ -58,7 +58,16 @@
     <section id="section_main" class="mt-3">
         <div class="container-fluid">
             
-
+                <div class="bannerContainer">
+                    <div class="bannerDiv"></div>
+                    <div class="bannerText">
+                        <h3>Welcome to Manali World tarvel</h3>
+                        <h3>Book all kind of taxi in Manali at best rates</h3>
+                        <?php
+                            echo '<a href="tel:'.$phone_number.'" class="btn btn-success btn-bg">Click To Call</a>';
+                        ?> 
+                    </div>
+                </div>
                 <!-- main query start  -->
                 <?php
                         // require('partials/main-banner.php');

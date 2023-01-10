@@ -1,6 +1,23 @@
 
 
 
+/* section main banner */
+@media only screen and (max-width: 952px){
+
+    .bannerText h3{
+        font-size: 40px
+    }
+    
+}
+
+/* section main banner */
+@media only screen and (max-width: 788px){
+
+    .bannerText h3{
+        font-size: 35px
+    }
+    
+}
 /* section main | main effect banner */
 @media only screen and (max-width: 576px){
 
@@ -16,6 +33,8 @@
         font-size: 1.5rem;
     }
 }
+
+
 
 
 

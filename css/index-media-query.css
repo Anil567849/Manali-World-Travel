@@ -2,6 +2,20 @@
 
 
 /* section main | main effect banner */
+@media only screen and (max-width: 952px){
+
+    .bannerText h3{
+        font-size: 40px
+    }
+    
+}
+@media only screen and (max-width: 788px){
+
+    .bannerText h3{
+        font-size: 35px
+    }
+    
+}
 @media only screen and (max-width: 576px){
 
     #section_main .main_query_msg{

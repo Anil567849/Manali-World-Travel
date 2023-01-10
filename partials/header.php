@@ -17,13 +17,13 @@
 
 
 
-    <!-- before collapse navbar start  -->
+    <!-- before collapse navbar start DESKTOP VIEW  -->
     <nav class="container-fluid p-0">
 
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid px-sm-2">
 
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="./index.php">
                     <img src="images/logo.png" alt="Logo" title="go to home">
                 </a>
                 
@@ -33,7 +33,7 @@
                 <div class="before_collapse d-sm-flex d-none">
                     <ul id="nav_icons" class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="https://www.manaliworldtravel.com">
+                            <a class="nav-link active" aria-current="page" href="./index.php">
                                 <img src="images/icons/home.svg" alt="">
                             </a>
                         </li>
@@ -64,9 +64,9 @@
                 <!-- <li class="nav-item"><a class="nav-link <?php // if(PAGE == "cab_packages"){echo 'text-warning';}else{echo 'text-white';}?>" href="cab-packages.php">Cab Packages</a></li>
                 <li class="nav-item"><a class="nav-link <?php // if(PAGE == "tour_packages"){echo 'text-warning';}else{echo 'text-white';}?>" href="tour-packages.php">Tour Packages</a></li>
                 <li class="nav-item"><a class="nav-link <?php // if(PAGE == "couple_packages"){echo 'text-warning';}else{echo 'text-white';}?>" href="couple-packages.php">Packages for Couple</a></li> -->
-                <li class="nav-item"><a class="nav-link <?php if(PAGE == "MANALI-TAXI-SERVICES"){echo 'text-warning';}else{echo 'text-white';}?>" href="https://www.manaliworldtravel.com/manali-taxi-services.php">Manali Taxi</a></li>
-                <li class="nav-item"><a class="nav-link <?php if(PAGE == "CHANDIGARH-MANALI-TAXI"){echo 'text-warning';}else{echo 'text-white';}?>" href="https://www.manaliworldtravel.com/chandigarh-manali-taxi.php">Chandigarh-Manali Taxi</a></li>
-                <li class="nav-item"><a class="nav-link <?php if(PAGE == "faq"){echo 'text-warning';}else{echo 'text-white';}?>" href="/faq.php">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link <?php if(PAGE == "MANALI-TAXI-SERVICES"){echo 'text-warning';}else{echo 'text-white';}?>" href="./manali-taxi-services.php">Manali Taxi</a></li>
+                <li class="nav-item"><a class="nav-link <?php if(PAGE == "CHANDIGARH-MANALI-TAXI"){echo 'text-warning';}else{echo 'text-white';}?>" href="./chandigarh-manali-taxi.php">Chandigarh-Manali Taxi</a></li>
+                <li class="nav-item"><a class="nav-link <?php if(PAGE == "faq"){echo 'text-warning';}else{echo 'text-white';}?>" href="./faq.php">FAQ</a></li>
             </ul>
         </div>
         
@@ -78,8 +78,7 @@
 
 
 
-    <!--mobile view -->
-    <!-- after collapse navbar start -->
+    <!-- after collapse navbar start MOBILE VIEW -->
     <div id="mySidenav" class="sidenav d-sm-none">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
@@ -90,7 +89,7 @@
                 <div class="after_collapse">
                     <ul id="nav_icons" class="navbar-nav d-flex flex-row justify-content-around">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="https://www.manaliworldtravel.com">
+                            <a class="nav-link" aria-current="page" href="./index.php">
                                 <img src="images/icons/home.svg" alt="">
                             </a>
                         </li>
@@ -126,13 +125,13 @@
                         <a class="nav-link <?php // if(PAGE == "couple_packages"){echo 'text-warning';}else{echo 'text-white';}?>" href="couple_packages.php">Packages for Couple</a>
                     </li> -->
                     <li class="nav-item"> 
-                        <a class="nav-link <?php if(PAGE == "MANALI-TAXI-SERVICES"){echo 'text-warning';}else{echo 'text-white';}?>" href="https://www.manaliworldtravel.com/manali-taxi-services.php">Manali Taxi</a>
+                        <a class="nav-link <?php if(PAGE == "MANALI-TAXI-SERVICES"){echo 'text-warning';}else{echo 'text-white';}?>" href="./manali-taxi-services.php">Manali Taxi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?php if(PAGE == "CHANDIGARH-MANALI-TAXI"){echo 'text-warning';}else{echo 'text-white';}?>" href="https://www.manaliworldtravel.com/chandigarh-manali-taxi.php">Chandigarh-Manali Taxi</a>
+                        <a class="nav-link <?php if(PAGE == "CHANDIGARH-MANALI-TAXI"){echo 'text-warning';}else{echo 'text-white';}?>" href="./chandigarh-manali-taxi.php">Chandigarh-Manali Taxi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?php if(PAGE == "faq"){echo 'text-warning';}else{echo 'text-white';}?>" href="/faq.php">FAQ</a></li>
+                        <a class="nav-link <?php if(PAGE == "faq"){echo 'text-warning';}else{echo 'text-white';}?>" href="./faq.php">FAQ</a></li>
                 </ul>
             </div>
 
@@ -143,8 +142,7 @@
     <!-- after collapse navbar end -->
 
 
-    <script>
-        
+    <script>        
     
         function openNav() {
         document.getElementById("mySidenav").style.width = "250px";

@@ -69,6 +69,18 @@
             <!-- single packages  -->
             <div id="single_packages" class="row">
                 <h1 class="heading">Book Local Taxi-Cab in Manali</h1>
+
+
+                <div class="bannerContainer">
+                    <div class="bannerDiv"></div>
+                    <div class="bannerText">
+                        <h3>Book 4x4 taxi Services</h3>
+                        <h3>For Snow Area - You have to book 4x4 Cars</h3>
+                        <?php
+                            echo '<a href="tel:'.$phone_number.'" class="btn btn-success btn-bg">Click To Call</a>';
+                        ?> 
+                    </div>
+                </div>
                 
                 
                 <?php 
@@ -81,75 +93,75 @@
                         if($row == 0 ){
                             echo 'no result found';
                         }else{
-                        $run_six_times = 0;
-                        while($data = $result->fetch_assoc()){
-
-                            $title = $data['title'];
-                            $trip_img = $data['trip_img'];
-                            $period = $data['period'];
-                            $sedan_rate = $data['sedan_rate'];
-                            $discounted_sedan_rate = $data['discounted_sedan_rate'];
-                            $suv_rate = $data['suv_rate'];
-                            $discounted_suv_rate = $data['discounted_suv_rate'];
-                            $tempo_rate = $data['tempo_rate'];
-                            $more_info = $data['more_info'];
                             
+                            while($data = $result->fetch_assoc()){
 
-                            $array = explode("|", $more_info);
-                            // print_r($array);
+                                $title = $data['title'];
+                                $trip_img = $data['trip_img'];
+                                $period = $data['period'];
+                                $sedan_rate = $data['sedan_rate'];
+                                $discounted_sedan_rate = $data['discounted_sedan_rate'];
+                                $suv_rate = $data['suv_rate'];
+                                $discounted_suv_rate = $data['discounted_suv_rate'];
+                                $tempo_rate = $data['tempo_rate'];
+                                $more_info = $data['more_info'];
+                                
 
-                           echo '<div class="col-md-6 col-lg-4 mt-3">
-                                        <div class="card">
-                                            <div class="card-body"> 
-                                                <img class="card-image" src="images/manali-taxi-services/'.$trip_img.'" alt="'.$title.'" title="'.$title.' Manali">
-                                                <h2 class="card-title d-inline">'. $title .'</h2>
-                                                <small class="period_text">'.$period.'</small><br>
-                                                <b>Manali to '.$title.' taxi fare</b>
-                                                <div class="car_info">';
-                                                
-                                                    if($discounted_sedan_rate == NULL || $discounted_sedan_rate == 0){
-                                                        $discounted_sedan_rate = $sedan_rate;
-                                                    }
-                                                    if($sedan_rate != 0 && $sedan_rate != null){
-                                                        echo '<p class="card-text">Dzire / Etios <span class="price">₹ <strike style="font-weight:bold; ">'.$sedan_rate.'</strike> &nbsp;&nbsp;&nbsp;'.$discounted_sedan_rate.'</span> </p>';
-                                                    }elseif($tempo_rate != 0 && $tempo_rate != null){
-                                                        echo '<p class="card-text">12 Seater Tempo <span class="price">₹ '.$tempo_rate.'</span> </p>';
-                                                    }else{
-                                                        echo '<p class="card-text">Dezire / Etios <span class="price">₹ rate not set</span> </p>';
-                                                    }
-                                                    echo '
-                                                </div>
-                                                <div class="car_info">';
-                                                    if($discounted_suv_rate == NULL || $discounted_suv_rate == 0){
-                                                        $discounted_suv_rate = $suv_rate;
-                                                    }
-                                                    if($suv_rate != 0 && $suv_rate != null){
-                                                        echo '<p class="card-text">SUV / Innova <span class="price">₹ <strike style="font-weight:bold; ">'.$suv_rate.'</strike> &nbsp;&nbsp;&nbsp;'.$discounted_suv_rate.'</span> </p>';
-                                                    }else{
-                                                        echo '<p class="card-text">SUV / Innova <span class="price">₹ rate not set</span> </p>';
-                                                    }
-                                                    echo '
-                                                </div> 
-                                                <div class="d-flex justify-content-between mt-2">
-                                                    <div class="dropdown ">
-                                                        <a class="btn btn-primary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        More Info
-                                                        </a>
-                        
-                                                        <ul class="dropdown-menu px-4" aria-labelledby="dropdownMenuLink">';
-                                                        for($i = 0 ; $i < count($array); $i++){
-                                                            echo '<li>'.$array[$i].'</small></li>';
+                                $array = explode("|", $more_info);
+                                // print_r($array);
+
+                            echo '<div class="col-md-6 col-lg-4 mt-3">
+                                            <div class="card">
+                                                <div class="card-body"> 
+                                                    <img class="card-image" src="images/manali-taxi-services/'.$trip_img.'" alt="'.$title.'" title="'.$title.' Manali">
+                                                    <h2 class="card-title d-inline">'. $title .'</h2>
+                                                    <small class="period_text">'.$period.'</small><br>
+                                                    <b>Manali to '.$title.' taxi fare</b>
+                                                    <div class="car_info">';
+                                                    
+                                                        if($discounted_sedan_rate == NULL || $discounted_sedan_rate == 0){
+                                                            $discounted_sedan_rate = $sedan_rate;
                                                         }
-                                                    echo '</ul>
+                                                        if($sedan_rate != 0 && $sedan_rate != null){
+                                                            echo '<p class="card-text">Dzire / Etios <span class="price">₹ <strike style="font-weight:bold; ">'.$sedan_rate.'</strike> &nbsp;&nbsp;&nbsp;'.$discounted_sedan_rate.'</span> </p>';
+                                                        }elseif($tempo_rate != 0 && $tempo_rate != null){
+                                                            echo '<p class="card-text">12 Seater Tempo <span class="price">₹ '.$tempo_rate.'</span> </p>';
+                                                        }else{
+                                                            echo '<p class="card-text">Dezire / Etios <span class="price">₹ rate not set</span> </p>';
+                                                        }
+                                                        echo '
                                                     </div>
-                                                    <div class="">
-                                                        <a href="tel:'.$phone_number.'" class="btn btn-success btn-sm">Click To Call</a>
+                                                    <div class="car_info">';
+                                                        if($discounted_suv_rate == NULL || $discounted_suv_rate == 0){
+                                                            $discounted_suv_rate = $suv_rate;
+                                                        }
+                                                        if($suv_rate != 0 && $suv_rate != null){
+                                                            echo '<p class="card-text">SUV / Innova <span class="price">₹ <strike style="font-weight:bold; ">'.$suv_rate.'</strike> &nbsp;&nbsp;&nbsp;'.$discounted_suv_rate.'</span> </p>';
+                                                        }else{
+                                                            echo '<p class="card-text">SUV / Innova <span class="price">₹ rate not set</span> </p>';
+                                                        }
+                                                        echo '
+                                                    </div> 
+                                                    <div class="d-flex justify-content-between mt-2">
+                                                        <div class="dropdown ">
+                                                            <a class="btn btn-primary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            More Info
+                                                            </a>
+                            
+                                                            <ul class="dropdown-menu px-4" aria-labelledby="dropdownMenuLink">';
+                                                            for($i = 0 ; $i < count($array); $i++){
+                                                                echo '<li>'.$array[$i].'</small></li>';
+                                                            }
+                                                        echo '</ul>
+                                                        </div>
+                                                        <div class="">
+                                                            <a href="tel:'.$phone_number.'" class="btn btn-success btn-sm">Click To Call</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>';
-                        }
+                                        </div>';
+                            }
 
                     }
                     }else{

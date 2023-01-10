@@ -3,9 +3,14 @@
 
 
 <?php
+    // $servername = "localhost";
+    // $username = "u892746128_manaliworld";
+    // $password = "ManaliWorld@70183";
+    // $dbname = "u892746128_manaliworld";
+
     $servername = "localhost";
-    $username = "u892746128_manaliworld";
-    $password = "ManaliWorld@70183";
+    $username = "root";
+    $password = "";
     $dbname = "u892746128_manaliworld";
 
     define("MYSQL_CONN_ERROR", "Unable to connect to database.");
