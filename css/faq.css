@@ -1,0 +1,67 @@
+
+
+
+
+
+/* //main section  */
+
+#faq_header{
+    height: 40vh;
+    background-color: #08749D;
+
+}
+
+#faq_header #faq_img_div{
+    height: 40vh;
+    width: 100%;
+}
+#faq_header #faq_img_div img{
+    height: 100%;
+    width: 100%;
+}
+
+#faq_header h1{
+    color: #FFF;
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+
+
+#faq_header h1{
+    margin-left: 4rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* //media query  */
+@media only screen and (max-width: 768px) {
+
+
+    #faq_header h1{
+        font-size: 2rem;
+        
+    }
+    
+    
+
+}
+    
+@media only screen and (max-width: 576px) {
+
+    section .heading{
+        font-size: 2rem;
+    }
+    
+
+}
+    

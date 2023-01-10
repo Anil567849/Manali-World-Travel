@@ -1,0 +1,100 @@
+
+
+
+/* section main | main effect banner */
+@media only screen and (max-width: 576px){
+
+    #section_main .main_query_msg{
+        font-size: 1.8rem;
+    }
+    
+}
+
+@media only screen and (max-width: 400px){
+    
+    #section_main .main_query_msg{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+/* // section main | pacakges card and details  */
+@media only screen and (max-width: 340px){
+    
+    #section_main .car_info p{
+        font-size: .9rem;
+    }
+    
+    #section_main .car_info .price{
+        font-size: .9rem;
+    }
+    
+    #section_main .car_info .price{
+        font-size: .9rem;
+    }
+}
+
+
+    
+@media only screen and (max-width: 310px){
+    
+    #section_main .car_info p{
+        font-size: .8rem;
+    }
+    
+    #section_main .car_info .price{
+        font-size: .8rem;
+    }
+    
+    #section_main .car_info div .btn{
+        font-size: .8rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 290px){
+    
+    #section_main .car_info p{
+        font-size: .7rem;
+    }
+    
+    #section_main .car_info .price{
+        font-size: .7rem;
+    }
+    
+    #section_main .car_info div .btn{
+        font-size: .7rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* //main content headings  */
+
+
+@media only screen and (max-width: 320px){
+    
+
+    .heading{
+        font-size: 2.0rem;
+    }
+    
+}
+
+@media only screen and (max-width: 270px){
+
+
+.heading{
+    font-size: 1.8rem;
+}
+}

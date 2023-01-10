@@ -1,0 +1,93 @@
+:root{
+    --body-bg-color: #E4E6EB;
+    --font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: var(--body-bg-color);
+    overflow-x: hidden;
+
+}
+
+
+
+
+/* content heading  */
+.heading{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    color: #0A0A0A;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+/* buttons  */
+.btn{
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+
+
+
+/* section main  */
+
+#section_main .card-body .card-title{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 0px;
+}
+#section_main .main_query_msg{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+#section_main .car_info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+
+#section_main .car_info p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1rem;
+    color: #000;
+}
+
+#section_main .car_info .price{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1rem;
+    color: #000;
+}
+
+#section_main .dropdown-menu li{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: .8rem;
+    color: #000;
+    margin-top: 3px;
+    list-style:disc;
+}
+
+.main_query_msg_div {
+    background-color: yellow;
+  }
+
+#section_main .dropdown-menu{
+    background-color: #0a0a0a;
+}
+
+
+#section_main .dropdown-menu li{
+    color: #FFFFFF;
+}

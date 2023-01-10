@@ -1,0 +1,117 @@
+
+
+
+
+
+/* section our team  */
+#section_team .card{
+    text-align: center;
+}
+
+#section_team .team_img{
+    height: 150px;
+    width: 150px;
+}
+
+
+
+#section_team img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+#section_team .team_name{
+    font-size: 1.1rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section team  */
+
+@media only screen and (max-width: 400px){
+    #section_team .team_name{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width: 390px){
+
+    #section_team .team_img{
+        height: 120px;
+        width: 120px;
+    }
+}
+
+
+@media only screen and (max-width: 360px){
+    #section_team .team_name{
+        font-size: .8rem;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+    
+        
+    #section_team .team_img{
+        height: 100px;
+        width: 100px;
+    }
+        
+}
+    
+@media only screen and (max-width: 310px){
+
+    #section_team .team_name{
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width: 290px){
+
+    #section_team .team_img{
+        height: 90px;
+        width: 90px;
+    }
+
+}
+
+

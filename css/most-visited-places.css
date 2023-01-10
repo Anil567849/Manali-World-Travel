@@ -1,0 +1,31 @@
+
+
+#section_visit .row, #section_other_taxi_services .row{
+    height : auto;
+}
+
+
+#section_visit .row .card, #section_other_taxi_services .row .card{
+    height : 100%;
+}
+
+
+
+
+/* section card title and text and images */
+#section_visit .card-title, #section_things_to_do .card-title, #section_other_taxi_services .card-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.5rem; 
+}
+
+#section_visit .card-text, #section_things_to_do .card-text, #section_other_taxi_services .card-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1rem;    
+}
+
+#section_visit img, #section_things_to_do img, #section_other_taxi_services img {
+    height: 250px;
+    width: 100%;
+}

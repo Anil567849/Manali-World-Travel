@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /cab-packages.php
+Disallow: /couple-packages.php
+Disallow: /tour-packages.php
+
+
+Sitemap: https://www.manaliworldtravel.com/sitemap.xml
